@@ -1,0 +1,149 @@
+.menu-hero{
+    background: url(images/gallery1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+
+}
+.menu-hero-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #2524224d;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.menupageHead{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    color: white;
+}
+.menupageHead h3{
+    font-size: 50px;
+}
+#menu-filters{
+   display: flex;
+   justify-content: end;
+}
+.filter-btn{
+    background-color: #9d0208;
+    color: white;
+    transition: all 0.4s ease;
+}
+.filter-btn:hover{
+    background-color: white;
+    border: 2px solid #9d0208
+}
+
+#filterable_btns {
+    padding: 40px 0;
+    display: flex;
+    justify-content: end;
+    margin: 20px 0;
+}
+#filterable_btns button{
+border: 2px solid #9d0208;
+color: #252422;
+padding: 10px 15px;
+border-radius: 8px;
+
+transition: all 0.4s ease;
+}
+
+#filterable_btns button:hover{
+ 
+background-color: #9d0208;
+color: white;
+}
+.menu-active{
+background-color: #9d0208;
+color: white!important;
+}
+.hide{
+    display: none;
+}
+.filterCard{
+  
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+.filterCard img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+.filterCardOverlay p{
+    color: #f2f0f0;
+}
+.filterCardOverlay h6{
+    background-color: #9d0208;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.filterCardOverlay{
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:  #252422b3;
+    color: white;
+    transition: all 0.4s ease;
+}
+.filterCard:hover img{
+    transform: scale(1.1);
+}
+ .filterCard:hover .filterCardOverlay{
+    top: 0;
+ }
+
+ .filterCardOverlay h4{
+        text-transform: capitalize;
+    }
+@media(max-width:992px){
+      .menupageHead h3{
+        font-size: 35px;
+    }
+}
+@media(max-width:768px){
+      .menupageHead h3{
+        font-size: 25px;
+    }
+    #filterable_btns{
+        justify-content: center;
+    }
+}
+@media(max-width:600px){
+    .col-auto{
+        padding: 0 4px;
+    }
+    
+    #filterable_btns button{
+        padding: 8px 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .filterCardOverlay h4{
+        font-size: 18px;
+    }
+    .filterCardOverlay p {
+        font-size: 14px;
+    }
+    .filterCardOverlay h6{
+        font-size: 14px;
+    }
+}

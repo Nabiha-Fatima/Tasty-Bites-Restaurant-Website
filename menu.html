@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasty Bites</title>
+   
+    <!-- bootstrap-----css----------link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- font----roboto-----link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- font--------dancing---script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font----awesome------link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--css----------link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- responsive----------css -->
+     <link rel="stylesheet" href="responsive.css">
+
+    <!-- menu---------css  -->
+     <link rel="stylesheet" href="menu.css">
+
+  </head>
+
+  <body>
+    <!-- navbar-----------start -->
+   <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="100px" alt="tasty_bites_logo" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class=""></span> -->
+            <i class="fa-solid fa-bars "></i>
+            </button>
+            <div class="collapse navbar-collapse responsive-navbar "   id="navbarSupportedContent">
+              <div class="bootstrapCloseBtn d-lg-none d-md-block  ">
+                <i class="fa-solid fa-xmark" ></i>
+              </div>
+              
+             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto ">
+            
+                <li class="nav-item">
+                  <a class="nav-link "  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reservation</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+               
+            </div>
+            
+        </div>
+    </nav>
+    <!-- navbar-----------end -->
+    <section class="menu-hero">
+        <div class="menu-hero-overlay">
+          <div class="container">
+             <div class="row d-flex align-items-center">
+                <div class="col-md-12">
+                  <div class="menupageHead">
+                     <h3>Our Menu</h3>
+                  </div>
+                  
+                </div>
+             </div>
+          </div>
+        </div>
+       
+    </section>
+     
+    
+
+     <!-- menu---------section----start -->
+      <section class="menu">
+        <div class="container">
+          <div class="row">
+           <div class="col-md-12">
+             <div class="menu-container">
+              <h3>Our Top Rated Menu</h3>
+               <div class="row" id="menu-items">
+                
+               </div>
+               <button><a href="#">View More</a></button>
+             </div>
+           </div>
+
+          </div>
+
+          <div class="row" id="filterable_btns">
+            <div class="col-auto">
+              <button data-name="all" class="menu-active">All</button>
+            </div>
+            <div class="col-auto">
+             <button data-name="breakfast">breakfast</button>
+
+            </div>
+            <div class="col-auto">
+              <button data-name="lunch">Lunch</button>
+            </div>
+            <div class="col-auto">
+              <button data-name="dinner">Dinner</button>
+
+            </div>
+          </div>
+          <div class="row" id="filterable_cards">
+            <div class="col-lg-4 col-md-6 filterCardContainer" data-name="breakfast">
+              <div class="filterCard" >
+                <img src="images/breakfast.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Boiled Egg with Spinach</h4>
+                   <p>
+                    A healthy combo of perfectly boiled eggs served on a bed of fresh spinach.
+                   </p>
+                   <h6>
+                    $ 45
+                   </h6>
+                </div>
+              </div>
+            </div>
+             <div class="col-lg-4 col-md-6 filterCardContainer" data-name="dinner">
+              <div class="filterCard" >
+                <img src="images/dinner.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Red Sauce Fish Curry</h4>
+                   <p>
+                    Tender fish cooked in a rich and tangy red tomato sauce.
+                   </p>
+                   <h6>
+                    $ 55
+                   </h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="lunch">
+              <div class="filterCard" >
+                <img src="images/lunch.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Grilled Chicken with Pineapple</h4>
+                   <p>
+                     Juicy grilled chicken topped with sweet and tangy pineapple slices.
+                   </p>
+                   <h6>
+                    $ 60
+                   </h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="breakfast">
+              <div class="filterCard" >
+                <img src="images/breakfast2.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Honey Drizzle Pancakes</h4>
+                   <p>
+                    Fluffy pancakes served with a golden drizzle of pure honey.
+                   </p>
+                   <h6>
+                    $ 35
+                   </h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="lunch">
+              <div class="filterCard" >
+                <img src="images/lunch2.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Tomato Shrimp Spaghetti</h4>
+                   <p>
+                    Al dente spaghetti tossed with fresh tomatoes and succulent shrimp.
+                   </p>
+                   <h6>
+                    $ 70
+                   </h6>
+                </div>
+              </div>
+            </div> 
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="breakfast">
+              <div class="filterCard" >
+                <img src="images/breakfast3.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Half Fry Egg with Toast</h4>
+                   <p>
+                     Perfectly fried eggs served with crispy golden toast.
+                   </p>
+                   <h6>
+                    $ 25
+                   </h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="lunch">
+              <div class="filterCard" >
+                <img src="images/lunch3.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Classic Burger with Salad</h4>
+                   <p>
+                     Juicy beef patty with fresh lettuce and tomato, served alongside a crisp garden salad.
+                   </p>
+                   <h6>
+                    $ 65
+                   </h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="dinner">
+              <div class="filterCard" >
+                <img src="images/dinner3.avif" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Beef Steak with Fries</h4>
+                   <p>
+                      Tender beef steak served with golden crispy fry potatoes.
+                   </p>
+                   <h6>
+                    $ 80
+                   </h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-6 filterCardContainer" data-name="dinner">
+              <div class="filterCard" >
+                <img src="images/dinner5.jpg" alt="" class="img-fluid">
+                <div class="filterCardOverlay">
+                   <h4>Classic Red Penne Pasta</h4>
+                   <p>
+                     Al dente penne pasta lightly tossed with herbs and spices.
+                   </p>
+                   <h6>
+                    $ 50
+                   </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- menu---------section----end -->
+
+     
+
+
+
+      <!-- footer----------------start -->
+     <footer id="footer">
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <h5>About Meal</h5>
+              <p>
+                At Tasty Bites, every meal is a celebration of flavor. 
+                From desi delights to global favorites — we make food that feels like home.
+              </p>
+              
+              <a href="#">Read More</a>
+
+              <div class="social-links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-pages">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                 <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+              <h5>Contact Us</h5>
+              <p>Phone: +92 300 1234567</p>
+              <p>Email: info@tastybites.com</p>
+              <p>Address: 123 Main Street, Sukkur, Pakistan</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="newsletter-box">
+              <h5>NewsLetter</h5>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <input type="email" placeholder="Enter email address">
+              <a href="">Subscribe</a>
+            </div>
+          </div>
+
+        </div>
+       </div>
+     </footer>
+     <div class="footer-tagline">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="footer_title">
+              © 2025  <span>Tasty Bites </span>. All rights reserved. Designed & Developed ❤️ by <span>Nabiha Fatima</span>.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- swider---slider---js---link -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- bootstrap------js------link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- custom--------js----link -->
+    <script src="main.js"></script>
+
+    <!-- menu---------js----link -->
+     <script src="menu.js"></script>
+    
+  </body>
+</html>

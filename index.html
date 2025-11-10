@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasty Bites</title>
+   
+    <!-- bootstrap-----css----------link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- font----roboto-----link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- font--------dancing---script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font----awesome------link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--css----------link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- responsive----------css -->
+     <link rel="stylesheet" href="responsive.css">
+
+  </head>
+
+  <body>
+    <!-- navbar-----------start -->
+   <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="100px" alt="tasty_bites_logo" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class=""></span> -->
+            <i class="fa-solid fa-bars "></i>
+            </button>
+            <div class="collapse navbar-collapse responsive-navbar" id="navbarSupportedContent">
+              <div class="bootstrapCloseBtn d-lg-none d-md-block  ">
+                <i class="fa-solid fa-xmark" ></i>
+              </div>
+              
+             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto ">
+            
+                <li class="nav-item">
+                  <a class="nav-link "  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reservation">Reservation</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+               
+            </div>
+            
+        </div>
+    </nav>
+    <!-- navbar-----------end -->
+   
+     <!-- hero-----section-----start -->
+     <section class="hero">
+        <div class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="hero-content">
+                  <h1>Welcome to <span>Tasty Bites</span></h1>
+                  <h4>Delicious food made with love and fresh ingredients.  Taste the difference today!</h4>
+                  <button class="main-btn">Book a Table</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+     <!-- hero-----section-----end -->
+      <!-- about--------section----------start -->
+      <div class="about" id="about">
+         <div class="container">
+            <div class="about-content">
+              <div class="row">
+                <div class="col-lg-6  order-2 order-lg-1">
+                  <div class="about-content-title">
+                    <h3>Welcome</h3>
+                    <h5>From Desi delights to global bites – our story begins here.</h5>
+                    <p>
+                     A place where great taste meets warm hospitality.
+                      We serve fresh, flavorful dishes made with love and the finest ingredients.
+                    </p>
+                    <button class="discoverBtn">Discover More</button>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 ">
+                  <div class="about-sectionImg">
+                    
+                       <img src="images/about img.jpg" alt="" class="img-fluid">
+                  
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      <!-- about--------section----------end -->
+      <!-- Reservation--------section-------start -->
+      <section class="reservation" id="reservation">
+        <div class="container">
+           <h3>Reservation</h3>
+           
+           <div class="row align-items-center">
+            <div class="col-lg-7 ">
+              <div class="reservationContainer">
+                <h4>BOOK Table</h4>
+                <form action="" id="reservationForm">
+                 <div class="row">
+                   <div class="col-md-6">
+                     <div class="input-box">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                      </div>
+                      <div class="input-box" >
+                       Time
+                       <div class="person-select">
+                        <input id="time">
+                        <select name="" id="">
+                          <option value="">
+                            9:00
+                          </option>
+                          <option value="">
+                            9:30
+                          </option>
+                          <option value="">
+                            10:00
+                          </option>
+                          <option value="">
+                            10:30
+                          </option>
+                          <option value="">
+                          11:00
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="input-box">
+                      
+                      person
+                      <div class="person-select">
+                        
+                        <input type="text" id="person" >
+                       <select name="" id="">
+                          <option value="">1 person</option>
+                          <option value="">2 person</option>
+                          <option value="">3 person</option>
+                          <option value="">4 person</option>
+                       </select>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-box">
+                      <label for="name">Name</label>
+                      <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="input-box">
+                      <label for="phone">Phone</label>
+                      <input type="number" placeholder="Phone" id="phone" >
+                    </div>
+                    <div class="input-box">
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="Email" id="email">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="bookTable">
+                      <button type="submit">Book Table</button>
+                    </div>
+                   
+                  </div>
+                </form>
+                
+              </div>
+             </div>  
+             </div>
+            <div class="col-lg-5 ">
+              <div class="reservation-imgContainer">
+                <div class="reservation-overlay"></div>
+                <div class="reservationImg"> 
+                 <img src="images/booking-01.jpg.webp" alt="bookingImg" class="img-fluid">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reservation--------section-------end -->
+
+     <!-- menu---------section----start -->
+      <section class="menu">
+        <div class="container">
+          <div class="row">
+           <div class="col-md-12">
+             <div class="menu-container">
+              <h3>Our Top Rated Menu</h3>
+               <div class="row" id="menu-items">
+                
+               </div>
+               <button ><a href="menu.html">View More</a></button>
+             </div>
+           </div>
+          </div>
+        </div>
+      </section>
+      <!-- menu---------section----end -->
+
+     
+<!-- gallery---section------start -->
+<section class="gallery py-5" id="gallery">
+  <div class="container">
+    <h3 class="text-center mb-4">Our Gallery</h3>
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/gallery1.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="swiper-slide"><img src="images/gallery2.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="swiper-slide"><img src="images/gallery3.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="swiper-slide"><img src="images/gallery4.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="swiper-slide"><img src="images/gallery5.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="swiper-slide"><img src="images/gallery6.jpg" class="img-fluid rounded" alt=""></div>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- gallery---section------end -->
+
+<!-- contact---section------start -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28828.29739687911!2d68.28713658353496!3d25.420298574109257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7969b2f966db%3A0x6e3e8537610d1fe4!2sSind%20University!5e0!3m2!1sen!2s!4v1762693790974!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-md-6">
+        
+        <div class="contact-form">
+          <h3>SEND US A MESSAGE</h3>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="number" placeholder="Phone">
+          
+           
+            <textarea name="" id="" placeholder="Message"></textarea>
+        
+          <button>submit</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>    
+
+
+
+
+
+
+<!-- contact---section------end -->
+
+
+      <!-- footer----------------start -->
+     <footer id="footer">
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <h5>About Meal</h5>
+              <p>
+                At Tasty Bites, every meal is a celebration of flavor. 
+                From desi delights to global favorites — we make food that feels like home.
+              </p>
+              
+              <a href="#">Read More</a>
+
+              <div class="social-links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-pages">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                 <li><a href="menu.html">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+              <h5>Contact Us</h5>
+              <p>Phone: +92 300 1234567</p>
+              <p>Email: info@tastybites.com</p>
+              <p>Address: 123 Main Street, Sukkur, Pakistan</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="newsletter-box">
+              <h5>NewsLetter</h5>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <input type="email" placeholder="Enter email address">
+              <a href="">Subscribe</a>
+            </div>
+          </div>
+
+        </div>
+       </div>
+     </footer>
+     <div class="footer-tagline">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="footer_title">
+              © 2025  <span>Tasty Bites </span>. All rights reserved. Designed & Developed ❤️ by <span>Nabiha Fatima</span>.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- swider---slider---js---link -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- bootstrap------js------link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- custom--------js----link -->
+    <script src="main.js"></script>
+  </body>
+</html>
